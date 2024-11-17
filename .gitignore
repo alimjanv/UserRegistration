@@ -1,2 +1,2 @@
-user_regist/tests.py
-user_regist/models.py
+user_registry/tests.py
+user_registry/models.py
