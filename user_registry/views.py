@@ -1,9 +1,3 @@
-from django.contrib.auth import authenticate, login, logout
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework.permissions import AllowAny
-
-
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render
 from rest_framework.views import APIView
@@ -18,7 +12,7 @@ from django.views import View
 
 
 class LoginAPIView(APIView):
-    permission_classes = [AllowAny]  # Har qanday foydalanuvchi murojaat qilishi mumkin
+    permission_classes = [AllowAny]
 
     def post(self, request):
         email = request.POST.get('email')
